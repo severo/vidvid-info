@@ -26,14 +26,14 @@ const parseOption = (options, key) => {
 
 const defaults = {
   timeout: 1000 * 60 * 60 * 24,
-  crossOrigin: undefined,
+  crossOrigin: undefined
 }
 
 export const info = async (src, options = {}) => {
   const ms = parseOption(options, 'timeout')
   return promiseTimeout(
     ms,
-    new Promise(async resolve => {
+    new Promise((resolve, reject) => {
       const video = document.createElement('video')
       video.preload = 'metadata'
       video.crossOrigin = parseOption(options, 'crossOrigin')
@@ -41,7 +41,7 @@ export const info = async (src, options = {}) => {
         resolve({
           duration: video.duration,
           videoHeight: video.videoHeight,
-          videoWidth: video.videoWidth,
+          videoWidth: video.videoWidth
         })
       })
       video.addEventListener('error', () => {
