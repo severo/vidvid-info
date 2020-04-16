@@ -7,13 +7,13 @@ Fetch the duration, height and width of a video.
 `vidvid-info` is an ES module meant to be used in browsers.
 
 ```javascript
-import { info } from 'https://unpkg.com/vidvid-info'
+vidvid = import('https://unpkg.com/vidvid-info?module')
 ```
 
 ## Usage
 
 ```javascript
-import * as vidvid from 'https://unpkg.com/vidvid-info'
+vidvid = import('https://unpkg.com/vidvid-info?module')
 
 const src =
   'https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4'
