@@ -1,0 +1,28 @@
+{
+  "name": "video-info",
+  "version": "0.1.0",
+  "description": "Fetch info of a video",
+  "browser": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/severo/video-info.git"
+  },
+  "keywords": [
+    "video",
+    "info",
+    "fetch",
+    "metadata",
+    "DOM",
+    "document",
+    "browser"
+  ],
+  "author": {
+    "name": "Sylvain Lesage",
+    "email": "severo@rednegra.net"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/severo/video-info/issues"
+  },
+  "homepage": "https://github.com/severo/video-info#readme"
+}
