@@ -1,8 +1,8 @@
 {
   "name": "vidvid-info",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Fetch info of a video",
-  "module": "index.js",
+  "module": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/severo/vidvid-info.git"
