@@ -1,11 +1,11 @@
 {
-  "name": "video-info",
+  "name": "vidvid-info",
   "version": "0.1.0",
   "description": "Fetch info of a video",
   "browser": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/severo/video-info.git"
+    "url": "git+https://github.com/severo/vidvid-info.git"
   },
   "keywords": [
     "video",
@@ -22,7 +22,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/severo/video-info/issues"
+    "url": "https://github.com/severo/vidvid-info/issues"
   },
-  "homepage": "https://github.com/severo/video-info#readme"
+  "homepage": "https://github.com/severo/vidvid-info#readme"
 }
