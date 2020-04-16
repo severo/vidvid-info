@@ -26,7 +26,7 @@ const parseOption = (options, key) => {
 
 const defaults = {
   timeout: 1000 * 60 * 60 * 24,
-  crossOrigin: undefined
+  crossOrigin: undefined,
 }
 
 export const info = async (src, options = {}) => {
@@ -37,12 +37,15 @@ export const info = async (src, options = {}) => {
       const video = document.createElement('video')
       video.preload = 'metadata'
       video.crossOrigin = parseOption(options, 'crossOrigin')
-      video.addEventListener('loadedmetadata', async () => {
+      video.addEventListener('loadedmetadata', () => {
         resolve({
           duration: video.duration,
           videoHeight: video.videoHeight,
-          videoWidth: video.videoWidth
+          videoWidth: video.videoWidth,
         })
+      })
+      video.addEventListener('error', () => {
+        reject(new Error(`Video info could not be fetched`))
       })
 
       // set video src *after* listening to events in case it loads so fast
@@ -52,4 +55,4 @@ export const info = async (src, options = {}) => {
   )
 }
 
-export default {info}
+export default { info }
