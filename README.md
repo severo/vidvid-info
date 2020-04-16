@@ -50,3 +50,7 @@ It timeouts after <i>options.timeout</i> (in ms) or one day by default.
 If <i>options.crossOrigin</i> is
 [specified](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/crossOrigin#Value),
 CORS is used to fetch the video metadata. By default, no CORS is used.
+
+## Credits
+
+Developed for the LIRIS M2i project by Sylvain Lesage

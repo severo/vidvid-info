@@ -1,6 +1,6 @@
 {
   "name": "vidvid-info",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Fetch info of a video",
   "module": "index.js",
   "repository": {
